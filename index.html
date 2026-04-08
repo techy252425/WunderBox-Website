@@ -27,9 +27,9 @@
       <button class="nav-toggle" aria-label="Navigation umschalten" aria-expanded="false">&#9776;</button>
       <div class="nav-links">
         <a href="#features">Features</a>
-        <a href="#how-it-works">So funktioniert's</a>
-        <a href="#architecture">Architektur</a>
-        <a href="#safety">Sicherheit</a>
+        <a href="#why-wunderbox">Wieso WunderBox</a>
+        <a href="#how-it-works">Im Alltag</a>
+        <a href="#architecture">Für Interessierte</a>
         <a href="#faq">FAQ</a>
       </div>
       <a class="nav-cta" href="https://github.com/Anes-03/WunderBox" target="_blank" rel="noreferrer">
@@ -52,9 +52,9 @@
         Neu <span class="gradient">erlebbar.</span>
       </h1>
       <p class="hero-sub">
-        WunderBox ist eine <strong>just-for-fun</strong> macOS-App für kreative, verspielte Interaktionen &mdash;
-        Sensor-Events, Audio-Modi und ein privilegierter Helper direkt in der Menüleiste.
-        Kein Must-have für den Alltag, sondern ein technisches Spaßprojekt mit Charakter.
+        WunderBox ist eine <strong>just-for-fun</strong> macOS-App, die deinem Mac Persönlichkeit gibt:
+        Sounds bei Interaktionen wie Auf-/Zuklappen, sanfte Effekte im Alltag und einfach gute Vibes.
+        Nicht lebensnotwendig &mdash; aber genau deshalb macht’s so viel Spaß.
       </p>
       <div class="hero-buttons">
         <a class="btn btn-primary" href="https://github.com/Anes-03/WunderBox" target="_blank" rel="noreferrer">
@@ -87,7 +87,7 @@
       <div class="reveal">
         <p class="section-label">Features</p>
         <h2 class="section-title">Alles, was WunderBox kann</h2>
-        <p class="section-subtitle">Gebaut für Spaß, Experimente und Nerd-Vibes &mdash; leichtgewichtig, nativ und bewusst spielerisch statt „Business-kritisch“.</p>
+        <p class="section-subtitle">Was User wirklich interessiert: Wie fühlt sich die App im Alltag an und was macht sie besonders?</p>
       </div>
       <div class="features-grid">
         <article class="feature-card reveal">
@@ -96,9 +96,9 @@
           <p>Leichtgewichtige SwiftUI-Oberfläche für Status, Steuerung und Event-History — immer griffbereit.</p>
         </article>
         <article class="feature-card reveal">
-          <div class="feature-icon" aria-hidden="true">&#128274;</div>
-          <h3>Privilegierter Helper</h3>
-          <p>XPC-Helper via SMJobBless für Sensorzugriff mit sauberem App/Helper-Split und voller Systemintegration.</p>
+          <div class="feature-icon" aria-hidden="true">&#128165;</div>
+          <h3>Sound bei echten Mac-Interaktionen</h3>
+          <p>Wenn du dein MacBook bewegst, auf-/zuklappst oder triggerst, reagiert WunderBox mit passenden Sounds.</p>
         </article>
         <article class="feature-card reveal">
           <div class="feature-icon" aria-hidden="true">&#127925;</div>
@@ -106,45 +106,71 @@
           <p>Pain, Sexy, Halo, Lizard, Custom, Imported, Mix und Lid-Creak — wähle deinen Sound.</p>
         </article>
         <article class="feature-card reveal">
-          <div class="feature-icon" aria-hidden="true">&#128225;</div>
-          <h3>Sensor-Events</h3>
-          <p>Echtzeit-Daten vom Lid-Angle-Sensor — reagiere auf physische Interaktionen mit deinem MacBook.</p>
+          <div class="feature-icon" aria-hidden="true">&#128257;</div>
+          <h3>Lid Open/Close Reactions</h3>
+          <p>Beim Öffnen und Schliessen vom Deckel können automatisch Sounds oder Loops ausgelöst werden.</p>
         </article>
         <article class="feature-card reveal">
-          <div class="feature-icon" aria-hidden="true">&#128736;</div>
-          <h3>Simulation Mode</h3>
-          <p>Testen und entwickeln auch ohne unterstützten Sensor — perfekt für Debugging und Demos.</p>
+          <div class="feature-icon" aria-hidden="true">&#127881;</div>
+          <h3>Custom Fun-Modi</h3>
+          <p>Du kannst zwischen mehreren Styles wechseln oder eigene Sounds importieren und mischen.</p>
         </article>
         <article class="feature-card reveal">
           <div class="feature-icon" aria-hidden="true">&#128187;</div>
-          <h3>Apple Silicon Native</h3>
-          <p>Optimiert für M-Series Chips — minimaler Ressourcenverbrauch bei maximaler Performance.</p>
+          <h3>Läuft dezent im Hintergrund</h3>
+          <p>Direkt in der Menüleiste, leichtgewichtig und ohne nervige Unterbrechungen im Alltag.</p>
         </article>
       </div>
     </section>
 
-    <!-- How it Works -->
-    <section id="how-it-works" class="section wrap">
+    <!-- Why the name -->
+    <section id="why-wunderbox" class="section wrap">
       <div class="reveal" style="text-align:center">
-        <p class="section-label">So funktioniert's</p>
-        <h2 class="section-title">In drei Schritten startklar</h2>
-        <p class="section-subtitle" style="margin-left:auto;margin-right:auto">Vom Repository zum laufenden System — klar strukturiert und gut dokumentiert.</p>
+        <p class="section-label">Wieso «WunderBox»?</p>
+        <h2 class="section-title">Weil dein Mac plötzlich überraschend lebendig wirkt</h2>
+        <p class="section-subtitle" style="margin-left:auto;margin-right:auto">Der Name steht für kleine «Wunder-Momente»: Du machst etwas ganz Normales &mdash; und WunderBox reagiert mit Sound und Charakter.</p>
       </div>
       <div class="steps">
         <div class="step reveal">
           <div class="step-number">1</div>
-          <h3>Repository klonen</h3>
-          <p>Klone das Repository und navigiere in den <code>macos</code>-Ordner. Alle Abhängigkeiten sind im Repo enthalten.</p>
+          <h3>Du interagierst mit dem Mac</h3>
+          <p>Zum Beispiel: Deckel öffnen, Deckel schliessen oder ein Trigger-Event auslösen.</p>
         </div>
         <div class="step reveal">
           <div class="step-number">2</div>
-          <h3>Projekt generieren</h3>
-          <p>Führe <code>xcodegen generate</code> aus, um das Xcode-Projekt mit allen Targets und Konfigurationen zu erstellen.</p>
+          <h3>WunderBox erkennt das Event</h3>
+          <p>Die App erkennt die Interaktion im Hintergrund und matched sie mit deinem ausgewählten Modus.</p>
         </div>
         <div class="step reveal">
           <div class="step-number">3</div>
-          <h3>Bauen und starten</h3>
-          <p>Öffne das Projekt in Xcode, wähle das WunderBoxApp-Schema und starte den Build — fertig.</p>
+          <h3>Der «Wunder»-Moment passiert</h3>
+          <p>Ein passender Sound spielt ab &mdash; subtil oder wild, je nach Einstellung. Genau dieser Überraschungseffekt ist die Idee hinter WunderBox.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Everyday usage -->
+    <section id="how-it-works" class="section wrap">
+      <div class="reveal" style="text-align:center">
+        <p class="section-label">Im Alltag</p>
+        <h2 class="section-title">Was User am meisten feiern</h2>
+        <p class="section-subtitle" style="margin-left:auto;margin-right:auto">WunderBox ist kein Produktivitäts-Tool &mdash; es ist ein Fun-Layer für deinen Mac.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-number">1</div>
+          <h3>Modus wählen</h3>
+          <p>Wähle Pain, Halo, Mix oder einen eigenen Custom-Sound.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-number">2</div>
+          <h3>Empfindlichkeit einstellen</h3>
+          <p>Du bestimmst selbst, wie schnell und wie intensiv WunderBox auf Events reagiert.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-number">3</div>
+          <h3>Einfach Spaß haben</h3>
+          <p>Öffnen, schliessen, triggern &mdash; und dein Mac fühlt sich direkt viel verspielter an.</p>
         </div>
       </div>
     </section>
@@ -152,9 +178,9 @@
     <!-- Architecture -->
     <section id="architecture" class="section wrap">
       <div class="reveal">
-        <p class="section-label">Architektur</p>
-        <h2 class="section-title">Technisch durchdacht</h2>
-        <p class="section-subtitle">Moderne macOS-Architektur mit klarer Trennung zwischen App, Helper und geteilten Verträgen.</p>
+        <p class="section-label">Für Interessierte</p>
+        <h2 class="section-title">Wie es technisch umgesetzt ist</h2>
+        <p class="section-subtitle">Falls du tiefer eintauchen willst: hier die Architektur hinter den Effekten und Sounds.</p>
       </div>
       <div class="arch-grid">
         <article class="arch-card reveal">
@@ -233,11 +259,11 @@
       <div class="faq-list">
         <div class="faq-item reveal">
           <button class="faq-question" aria-expanded="false">
-            Welche Macs werden unterstützt?
+            Macht die App wirklich Sounds bei Interaktionen wie Deckel auf/zu oder Trigger-Events?
             <span class="faq-chevron" aria-hidden="true">&#9660;</span>
           </button>
           <div class="faq-answer" role="region">
-            <p>WunderBox ist für Apple-Silicon-MacBooks (M1 und neuer) optimiert. Auf anderen Geräten kann der Simulation Mode verwendet werden, um die App ohne physischen Sensor zu testen.</p>
+            <p>Ja. Genau dafür ist WunderBox da: Sie erkennt definierte Interaktionen (z. B. Lid Open/Close oder andere Trigger) und spielt passende Sounds bzw. Loops ab.</p>
           </div>
         </div>
         <div class="faq-item reveal">
@@ -246,7 +272,7 @@
             <span class="faq-chevron" aria-hidden="true">&#9660;</span>
           </button>
           <div class="faq-answer" role="region">
-            <p>Der privilegierte Helper wird über SMJobBless installiert, was eine einmalige Administratorbestätigung erfordert. Danach läuft alles automatisch.</p>
+            <p>Für den vollen Funktionsumfang braucht WunderBox einmalig eine Admin-Bestätigung für den Helper. Danach läuft alles bequem in der Menüleiste.</p>
           </div>
         </div>
         <div class="faq-item reveal">
