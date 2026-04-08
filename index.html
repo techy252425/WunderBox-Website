@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WunderBox — macOS Menu Bar App</title>
+  <meta name="description" content="WunderBox ist eine native macOS-Menüleisten-App mit Sensor-Events, Audio-Playback und privilegiertem Helper." />
+  <style>
+    :root{color-scheme:dark light}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0b1020;color:#e5e7eb}
+    .wrap{max-width:1080px;margin:0 auto;padding:28px}
+    .hero{padding:64px 0 32px}
+    h1{font-size:48px;line-height:1.05;margin:0 0 12px}
+    .sub{font-size:18px;color:#cbd5e1;max-width:760px}
+    .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+    .btn{display:inline-block;padding:11px 16px;border-radius:12px;text-decoration:none;font-weight:700}
+    .primary{background:#14b8a6;color:#042f2e}
+    .ghost{border:1px solid #334155;color:#e5e7eb}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:26px}
+    .card{background:#111827;border:1px solid #1f2937;border-radius:14px;padding:16px}
+    h2{font-size:24px;margin:36px 0 12px}
+    ul{margin:0;padding-left:18px;color:#cbd5e1;line-height:1.6}
+    .muted{color:#94a3b8}
+    footer{border-top:1px solid #1f2937;margin-top:42px;padding-top:16px;color:#94a3b8;font-size:14px}
+    code{background:#0f172a;padding:2px 6px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <p class="muted">Native macOS App</p>
+      <h1>WunderBox</h1>
+      <p class="sub">Eine native Menüleisten-App für macOS mit privilegiertem Helper (SMJobBless), Sensor-Events und flexiblen Audio-Modi — gebaut für Apple-Silicon-MacBooks.</p>
+      <div class="btns">
+        <a class="btn primary" href="https://github.com/Anes-03/WunderBox" target="_blank" rel="noreferrer">GitHub Repo öffnen</a>
+        <a class="btn ghost" href="#features">Features</a>
+      </div>
+    </section>
+
+    <section id="features">
+      <h2>Highlights</h2>
+      <div class="grid">
+        <article class="card"><strong>Menüleisten-App</strong><p class="muted">Leichtgewichtige SwiftUI-UI für Status, Steuerung und Event-History.</p></article>
+        <article class="card"><strong>Privilegierter Helper</strong><p class="muted">XPC-Helper via SMJobBless für Sensorzugriff mit sauberem App/Helper-Split.</p></article>
+        <article class="card"><strong>Audio-Modi</strong><p class="muted">Pain, Sexy, Halo, Lizard, Custom, Imported, Mix und Lid-Creak.</p></article>
+        <article class="card"><strong>Simulation Mode</strong><p class="muted">Läuft auch auf Geräten ohne unterstützten Sensor.</p></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technik</h2>
+      <ul>
+        <li>SwiftUI App + XPC Helper + Shared Contracts</li>
+        <li>SMJobBless für echte Helper-Installation</li>
+        <li>XcodeGen-Projektstruktur</li>
+        <li>Audio-Assets direkt im Repo gebündelt</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Quick Start</h2>
+      <ul>
+        <li><code>cd macos</code></li>
+        <li><code>xcodegen generate</code></li>
+        <li><code>xcodebuild -project WunderBoxMac.xcodeproj -scheme WunderBoxApp -configuration Debug CODE_SIGNING_ALLOWED=NO build</code></li>
+      </ul>
+    </section>
+
+    <footer>
+      WunderBox Website • Erstellt für Anes • Stand 2026
+    </footer>
+  </main>
+</body>
+</html>
